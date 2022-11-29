@@ -192,7 +192,7 @@ if __name__ == "__main__":
 
     # Initialize connection pool
     conn = aiohttp.TCPConnector(limit_per_host=100, limit=0, ttl_dns_cache=300)
-    PARALLEL_REQUESTS = 100
+    PARALLEL_REQUESTS = 300
     results = []
     # urls = [f'https://jsonplaceholder.typicode.com/todos/{i}' for i in range(4)] #array of urls
 
