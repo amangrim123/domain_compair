@@ -136,7 +136,7 @@ if __name__ == "__main__":
     else:
         PathSlash = "\\" 
 
-    load_dotenv(ScriptPath + PathSlash + '.env')
+    load_dotenv(ScriptPath + PathSlash + 's.env')
 
     ########################## load env variable ###################
     user_agent = os.environ['user_agent']
