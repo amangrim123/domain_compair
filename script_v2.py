@@ -118,7 +118,7 @@ async def gather_with_concurrency(n):
                     for comm in domain_rating:
                         ss = domain_name[j]
                         rating_result = ss + ' = ' + comm.strip()
-                        print(rating_result) 
+                        # print(rating_result) 
                         j +=1
                         get_domain_rating_result.append(rating_result)    
         await asyncio.gather(*(get(url,header,get_domain_rating_result) for url in domain_file))
